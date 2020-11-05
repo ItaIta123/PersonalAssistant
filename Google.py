@@ -6,7 +6,7 @@ import pprint
 from bs4 import BeautifulSoup
 import keys
 
-api_key = keys.google_api_key()
+api_key = "Google API key"
 
 
 def extract_lat_lng(address_or_postalcode='current', data_type='json', reverse=False, latlng=(0, 0)):
@@ -15,8 +15,7 @@ def extract_lat_lng(address_or_postalcode='current', data_type='json', reverse=F
     :param data_type:
     :param reverse: from geocode to address
     :param latlng: geocode lat and lng
-    :return: the geolocation: (lat,lng). If the current location (address_or_postalcode) isn't specified I Webscrape
-    the device's current geolocation
+    :return: the geolocation: (lat,lng)
     """
     # in the reverse case (geocode to address)
     if reverse is True:
