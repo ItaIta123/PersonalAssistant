@@ -1,5 +1,5 @@
 # PersonalAssistant
-A personal assistant built in Python that is able to send an email, show the weather, show POI near to your location or anywhere else on earth, ETA to a specific location, Read Wikipedia pages, and more...
+A personal assistant built with Python that is able to send an email, show the weather, show POI near to your location or anywhere else on earth, ETA to a specific location, Read Wikipedia pages, and more...
 
 
 Set-Up instructions: (View it in raw mode)
