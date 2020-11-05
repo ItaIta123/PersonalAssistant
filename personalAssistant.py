@@ -6,19 +6,14 @@ import requests
 import wikipedia
 import smtplib
 from Google import places_details, distance
-import keys
 
 
-name = "Karen"
+name = "Karen" # Name it however you want!
 
 
-# CHANGE RATE
 def speak(data=f"Hey, I am {name}. How can I help you ?"):
     engine = pyttsx3.init()
     """VOICE"""
-    # ['Male Robot-0', 'Hebrew-5', 'British man-7', 'Female-10', 'Steven Hokins-11', 'Werid female-17',
-    # 'Japanese/Chinese-18', 'Funny male voice-23', 'Female Russin-27', 'Female - very good - 28', 'Male Indian -32',
-    # 'Female - best 33', 'Australian (?) female - 37']
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[33].id)
     engine.say(data)
@@ -63,11 +58,6 @@ def voice_assistant(response):
 
     if "how far is the Sun" == response:
         speak("the Sun is 150 million kilometers away")
-
-    # if "fart" in response:
-    #     speak("Sure, I just need a few seconds to concentrate")
-    #     time.sleep(1.5)
-    #     os.startfile('fart.mp3')
 
     if "b****" in response:
         speak("Please speak nicely next time. Beach")
@@ -177,12 +167,12 @@ def wiki(search="Track and Field", sentences=2):
         print(url)
 
 
-def email(email_content="Hey!", receiver_email='pythontestita123@gmail.com'):
+def email(email_content="Hey!", receiver_email='Enters your email here for testing, otherwise leave as None'):
     """
-    This is the simple email sending syntax:
+    This is the simple email sending syntax for GMAIL USERS:
     """
-    my_email = 'pythontestita123@gmail.com'
-    email_password = 'python0202'
+    my_email = 'your_email'
+    email_password = 'your_email password'
     with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
         smtp.ehlo()
         smtp.starttls()
