@@ -4,9 +4,8 @@ import googlemaps
 # import prettyprint
 import pprint
 from bs4 import BeautifulSoup
-import keys
 
-api_key = "Google API key"
+api_key = "Your Google API key"
 
 
 def extract_lat_lng(address_or_postalcode='current', data_type='json', reverse=False, latlng=(0, 0)):
