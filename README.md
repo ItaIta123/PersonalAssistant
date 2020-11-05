@@ -7,7 +7,6 @@ Set-Up instructions:
 1. pip install the following libraries:
 For the personalAsistant file:
   import pyttsx3 # for the speaking ability
-  
   import speech_recognition as sr  # NOTICE as for 11/5/20 there is a probleb in pip install PyAudio. I found a solution that require using Brew package manager:     Install brew -> brew install portaudio -> pip3 install PyAudio
   import random
   import time
