@@ -93,7 +93,15 @@ def voice_assistant(response):
     if "what is the weather" in response:
         city = response.split("what is the weather in")
         city = " ".join(city)  # "Gets only the city name"
+        city = city.strip()
         weather(city)
+    
+    if "is the weather" in response:
+        city = response.split("is the weather in")
+        city = " ".join(city)  # "Gets only the city name"
+        city = city.strip()
+        weather(city)
+
 
     if "who is" in response:
         search = response.split('is')
