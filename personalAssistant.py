@@ -102,7 +102,6 @@ def voice_assistant(response):
         city = city.strip()
         weather(city)
 
-
     if "who is" in response:
         search = response.split('is')
         search = search[1]
@@ -112,6 +111,20 @@ def voice_assistant(response):
 
     if "who was" in response:
         search = response.split('was')
+        search = search[1]
+        search = search.strip()
+        print(search + ":")
+        wiki(search)
+     
+    if "what was" in response:
+        search = response.split('was')
+        search = search[1]
+        search = search.strip()
+        print(search + ":")
+        wiki(search)
+
+    if "what is" in response:
+        search = response.split('is')
         search = search[1]
         search = search.strip()
         print(search + ":")
