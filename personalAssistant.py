@@ -59,12 +59,6 @@ def voice_assistant(response):
     if "how far is the Sun" == response:
         speak("the Sun is 150 million kilometers away")
 
-    if "b****" in response:
-        speak("Please speak nicely next time. Beach")
-
-    if "f*****" in response:
-        speak("Please speak nicely next time")
-
     if "stop the program" in response:
         speak("Ok,I hope to see you soon!")
         exit()
@@ -84,7 +78,7 @@ def voice_assistant(response):
             "Two fish are in a tank. One says to the other, Do you know how to drive this thing?",
             "Can a kangaroo jump higher than a house?. Of course, a house doesn't jump at all",
             "The doctor is saying. I'm sorry but you suffer from a terminal illness and have only 10 to live. "
-            "The patient replies.What do you mean, 10?. 10 what?, 10 Months? 10 Weeks? 10 days? .Then the doctor is "
+            "The patient replies. What do you mean, 10?. 10 what?, 10 Months? 10 Weeks? 10 days? .Then the doctor is "
             "saying, Nine. Eight. Seven."]
         speak("Here is one")
         speak(random.choice(joke_list))
